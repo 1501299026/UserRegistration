@@ -13,15 +13,18 @@ public class UserRegistration {
 			return false;
 		}
 		 Matcher m = p.matcher(name);
-		 return m.matches();	 
+		 return m.matches();	 	 
 	}
 	public static void main(String[] args) {
-		System.out.println("Welcome user registration");
 		System.out.println("Welcome in User Registration");
 		Scanner input = new Scanner(System.in); 
 		System.out.print("Enter the your First Name : ");
 		String fname = input.nextLine();	 
 	    System.out.println(usernameValidation(fname));
+	    System.out.print("Enter the your Last Name : ");
+		String lname = input.nextLine();	 
+	    System.out.println(usernameValidation(lname));
+	    
 	}
 
 }
