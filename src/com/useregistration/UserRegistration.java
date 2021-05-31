@@ -14,6 +14,7 @@ public class UserRegistration {
 	 */
 	public static boolean usernameValidation(String name) 
 	{
+
 		String regex = "^[A-Z]{1}[a-z A-Z]{2,}$";
 		Pattern p = Pattern.compile(regex);
 		if (name == null) 
@@ -61,10 +62,11 @@ public class UserRegistration {
 	 * @return boolean value 
 	 * password validation part 1 is enter minimum 8 characters
 	 * password validation part 2 is  having minimum 1 upper case character.
+	 * password validation part 3 is having minimum 1 numeric value.
 	 */
 	public static boolean passwordValidation(String password) 
 	{
-		String regex = "^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
+		String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$";
 		Pattern p = Pattern.compile(regex);
 		if ( password == null ){
 			return false;
