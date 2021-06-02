@@ -1,2 +1,0 @@
-com/userregistration/UserRegistration.java
- com.userregistration.UserRegistration
